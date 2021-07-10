@@ -242,6 +242,8 @@ color: #5FB4A2;
 }
 
 .contactme__heading {
+  font-family: var(--header-fonts);
+  font-weight: 700;
   color: var(--header-color);
   font-size: 40px;
   line-height: 42px;
@@ -311,18 +313,34 @@ margin-right: auto;
 }
 
 /* Media Nav  */
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .sitenav {
     display: none;
   }
-  .sitenav-footer {
-    display: block;
+  .footer .sitenav-footer {
+    display: flex;
     flex-direction: row;
   }
   .footer {
+    display: flex;
     flex-direction: row;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .man__img {
+    /* width: 300px; */
+  }
+  .site-about .about {
+    display: flex;
+    flex-direction: row;
+  }
+  .site-contactme .cantactme {
+    display: flex;
+    flex-direction: row;
+    }
+}
+
 
 @media only screen and (min-width: 501px) {
   .burger-nav {
@@ -410,9 +428,10 @@ margin-right: auto;
   letter-spacing: -0.357143px;
   color: var(--header-color);
   margin-right: auto;
+  margin-top: 0;
 }
 .map-item {
-  min-width: 635px;
+
 }
 
 .input__wrapper {
@@ -421,8 +440,14 @@ margin-right: auto;
 
 .input {
   padding: 9px 16px;
+  width: 635px;
+  background-color: #E6E6E7;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .button__link {}
 
-.submit__button {}
+.submit__button {
+  margin-top: 24px;
+}
