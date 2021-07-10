@@ -135,12 +135,45 @@ color: #5FB4A2;
  }
 
  .button__link {
-
+   position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: var(--header-color);
+  color: #FFFFFF;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 24px;
+  padding-left: 68px;
+  display: inline-block;
  }
-
- .button {
-
+ .button__link::before {
+   content: "";
+   position: absolute;
+   background-image: url(../img/hero-arrov-bottom.png);
+   background-repeat: no-repeat;
+   display: block;
+   background-color: #fff;
+   background-size: contain;
+   background-color: transparent;
+   width: 16px;
+   height: 12px;
+   /* padding: 22px; */
+   top: 20px;
+   left: 10px;
  }
+  .button__link:hover {
+    background-color: #5FB4A2;
+    transition: 0.3s ease;
+  }
+  .button__link:active {
+      background-color: #D2D8DB;
+      transition: 0.3s ease;
+    }
+
 
  /* About Section  */
 .site-about {}
