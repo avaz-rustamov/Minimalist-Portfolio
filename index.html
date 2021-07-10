@@ -12,18 +12,77 @@
 <body>
 <!-- HEADER -->
   <header class="site_header">
-    
+    <div class="container">
+      <div class="header">
+        <a href="index.html"><img src="img/logo-top.svg" alt="Logo Minimalist Portfolio" height="32" width="60"></a>
+
+           <!-- SITENAV -->
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+         <li class="sitenav__list-item">
+           <a class="sitenav__link" href="index.html">Home</a>
+         </li>
+         <li class="sitenav__list-item">
+           <a class="sitenav__link" href="index.html">Portfolio</a>
+         </li>
+         <li class="sitenav__list-item">
+           <a class="sitenav__link" href="index.html">Contact Me</a>
+         </li>
+       </ul>
+      </nav>
+
+      <button class="burger-nav" type="button">
+        <img src="img/burger-nav-img.svg" alt="burger nav img" width="24" height="13">
+      </button>
+      </div>
+    </div>
   </header>
 
 <!-- MAIN -->
   <main class="main">
-
+    <section class="site-hero">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-content">
+            <h1 class="hero__heading">
+              Hey, I’m Alex Spencer and I love building beautiful websites
+            </h1>
+            <a class="button__link button" href="#">About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 
+  <section class="site-about">
+    <div class="container">
+      <div class="about">
+        <div class="man__box">
+          <picture class="man__picture">
+            <source srcset="../img/brat-mobile.png 1x, img/brat-mobile@2x.png 2x" media="(max-width: 375px)" type="image/png">
+            <source srcset="../img/brat-tablet.png 1x, ../img/brat-tablet@2x.png 2x" media="(max-width: 900px)"
+            type="image/png">
+            <img class="man__img" src="../img/brat-desktop.png" alt="Man image"
+            srcset="../img/brat-desktop.png 1x, ../img/brat-desktop@2x.png 2x" width="540" height="600">
+          </picture>
+        </div>
+
+        <div class="about-content">
+          <h2 class="about__heading">About Me</h2>
+          <p class="about__text">
+            I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+          </p>
+
+          <a href="#" class="button__white">Go to Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
 <!-- FOOTER -->
   <footer class="footer">
 
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
