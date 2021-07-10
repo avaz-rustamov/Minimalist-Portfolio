@@ -93,17 +93,7 @@ color: #5FB4A2;
   margin-left: auto;
 }
 
-/* Media Nav  */
-@media only screen and (max-width: 500px){
-  .sitenav {
-    display: none;
-  }
-}
-@media only screen and (min-width: 501px) {
-  .burger-nav {
-    display: none;
-  }
- }
+
 
  /* Hero Section  */
  .site-hero {
@@ -176,17 +166,11 @@ color: #5FB4A2;
 
 
  /* About Section  */
-.site-about {}
 
 .about {
   display: flex;
 }
 
-.man__box {}
-
-.man__picture {}
-
-.man__img {}
 
 .about-content {
   margin-left: 125px;
@@ -314,4 +298,33 @@ margin-right: auto;
 }
 .social-link:active {
   fill: rgba(255, 255, 255, 0.555)
+}
+
+
+/* Media Nav  */
+@media only screen and (max-width: 500px) {
+  .sitenav {
+    display: none;
+  }
+  .sitenav-footer {
+    display: block;
+    flex-direction: row;
+  }
+  .footer {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .burger-nav {
+    display: none;
+  }
+}
+
+/* Medials  */
+@media only screen and (max-width: 900px) {
+   .hero {
+     background-image: url(../img/hero-taplet-bg.png);
+   }
+
 }
