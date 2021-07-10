@@ -374,7 +374,9 @@ margin-right: auto;
   margin-right: 16px;
 }
 
-.about-link-blue {}
+.about-link-blue {
+
+}
 
 .contact::before {
   content: "";
@@ -388,5 +390,39 @@ margin-right: auto;
   display: block;
   border-top: 1px solid #33323D;
   opacity: 0.15;
-  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+
+/* Form  */
+.main-about {
+  padding-bottom: 110px;
+}
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-hedimg {
+  font-family: var(--header-fonts);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: var(--header-color);
+  margin-right: auto;
+}
+.map-item {
+  min-width: 635px;
+}
+
+.input__wrapper {
+
+}
+
+.input {
+  padding: 9px 16px;
+}
+
+.button__link {}
+
+.submit__button {}
