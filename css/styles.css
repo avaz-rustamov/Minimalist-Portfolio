@@ -446,7 +446,11 @@ margin-right: auto;
   margin-bottom: 8px;
 }
 
-.button__link {}
+ .label-form {
+   font-size: 13px;
+   line-height: 30px;
+   color: #33323D;
+ }
 
 .submit__button {
   margin-top: 24px;
