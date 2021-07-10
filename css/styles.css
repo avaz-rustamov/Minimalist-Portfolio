@@ -300,6 +300,15 @@ margin-right: auto;
   fill: rgba(255, 255, 255, 0.555)
 }
 
+.about-link-blue {
+  fill: #33323D;
+}
+.about-link-blue:hover {
+  opacity: 0.8;
+}
+.about-link-blue:active {
+  opacity: 0.6;
+}
 
 /* Media Nav  */
 @media only screen and (max-width: 500px) {
@@ -327,4 +336,57 @@ margin-right: auto;
      background-image: url(../img/hero-taplet-bg.png);
    }
 
+}
+
+/* Contact  */
+.contact {
+
+}
+
+.contact__headiing {
+  font-family: var(--header-fonts);
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: var(--header-color);
+}
+
+.contact_text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--header-color);
+  opacity: 0.8;
+}
+
+.about-link__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-link__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.about-link-blue {}
+
+.contact::before {
+  content: "";
+  display: block;
+  border-top: 1px solid #33323D;
+  opacity: 0.15;
+  padding-top: 50px;
+}
+.contact::after {
+  content: "";
+  display: block;
+  border-top: 1px solid #33323D;
+  opacity: 0.15;
+  padding-top: 50px;
 }
